@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+      @apply bg-gradient-to-r from-blue-gray-900 to-gray-900;
+  }
+}
+
+/* background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%); */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+.box {
+  border: 0.35rem solid;
+  padding: 2vw;
+  border-image: conic-gradient(from var(--angle), transparent, rgba(255,255,255,255) 0.1turn, rgba(255,255,255,255) 0.15turn, transparent 0.25turn) 30;
+  animation:  borderRotate 3000ms linear infinite forwards;
+  z-index: 1
+}
+
+.copyright-box {
+  background: linear-gradient(
+    to left,
+    rgba(255,255,255,255),
+    transparent 30%,
+    transparent 40%,
+    transparent 50%,
+    transparent 60%,
+    transparent 70%,
+    rgba(255,255,255,255) 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation:  textShine 2800ms linear infinite forwards;
+
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0%;
+  }
+  100% {
+      background-position: 100%;
+  }
+}
+
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+
+.zoomTransition {
+  animation: 1s ease-in 0s zoomAuto;
+}
+
+@keyframes zoomAuto {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+.fadeInCenter[doFadeIn='1']{
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.slideInDown{
+  -moz-animation: all 1s slide-down;
+  -o-animation: all 1s slide-down;
+  -ms-animation: all 1s slide-down;
+  -webkit-animation: all 1s slide-down;
+  animation: all 1s slide-down;
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -10%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+.slideInLeft[doAnimateLeft='1'] {
+   -moz-animation: 1s slide-left;
+   -o-animation: 1s slide-left;
+   -ms-animation: 1s slide-left;
+   -webkit-animation: 1s slide-left;
+   animation: 1s slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.slideInRight[doAnimateRight='1'] {
+  -moz-animation: 1s slide-right;
+  -o-animation: 1s slide-right;
+  -ms-animation: 1s slide-right;
+  -webkit-animation: 1s slide-right;
+  animation: 1s slide-right;
+}
+
+@keyframes slide-right {
+ from {
+   margin-right: 100%;
+   width: 50%;
+ }
+
+ to {
+   margin-right: 0%;
+   width: 100%;
+ }
+}
+
+
