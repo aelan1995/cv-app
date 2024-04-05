@@ -9,7 +9,7 @@ import Experiences from 'components/main/experiences.js'
 
 export default function Main() {
   return (
-     <div className="container mx-auto xsm:mx-6">
+     <div className="container mx-auto xsm:mx-12">
          <NavbarLanding/>
          <Tagline/>
 
