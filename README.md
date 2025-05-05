@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CV App (Version 1)
 
-## Getting Started
+This is the initial version (`v1`) of **cv-app**, a personal website and resume app built using [Next.js](https://nextjs.org/). It was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and is intended to serve as a clean, minimal starting point for building and showcasing your online CV.
 
-First, run the development server:
+---
+
+## 🚀 What's in Version 1
+
+- Basic homepage setup (`app/page.js`)
+- Optimized fonts with [`next/font`](https://nextjs.org/docs/basic-features/font-optimization)
+- Fast and automatic hot reload during development
+- Ready for deployment on [Vercel](https://vercel.com)
+
+---
+
+## 🔧 Getting Started
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +27,39 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Start editing from `app/page.js`. Your changes will auto-update.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🛣️ Version 2 Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+The next major version of `cv-app` will include a complete redesign and richer content:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🎨 **New Website Design** – A polished, professional layout tailored for personal branding
+- 👨‍💻 **Experience Details** – Full breakdown of professional experiences, roles, and accomplishments
+- 🛠 **Tech Stack** – Showcase of tools, frameworks, and languages you use
+- 🗂 **Portfolio Section** – Visual and descriptive display of previous works
+- 📁 **Project Highlights** – Dedicated page for each project with screenshots, tech used, and links
+- ▶️ **YouTube Channel Integration** – Embedded videos and a page dedicated to your channel content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+> Status: 🚧 Currently in planning and early development
+> ⚠️ This repository contains CV App **Version 1**.  
+> Version 2 is now being actively developed here: [cv-app-v2](https://github.com/your-username/cv-app-v2)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📚 Learn More
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Next.js GitHub](https://github.com/vercel/next.js/)
+
+---
+
+## 🚀 Deploy on Vercel
+
+Deploy instantly via [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+Check the [deployment documentation](https://nextjs.org/docs/deployment) for full guidance.
