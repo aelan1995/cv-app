@@ -46,7 +46,7 @@ The next major version of `cv-app` will include a complete redesign and richer c
 
 > Status: 🚧 Currently in planning and early development
 > ⚠️ This repository contains CV App **Version 1**.  
-> Version 2 is now being actively developed here: [cv-app-v2](https://github.com/your-username/cv-app-v2)
+> Version 2 is now being actively developed here: [allan-io](https://github.com/aelan1995/allan-io)
 
 ---
 
